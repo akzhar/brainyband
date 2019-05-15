@@ -1,3 +1,40 @@
-@import "./fonts/fonts.scss";
+@font-face {
+  font-weight: 400;
+  font-family: "proxima-bold";
+  font-style: normal;
+  font-display: optional;
+  src: url("../fonts/proximanova-bold.woff2") format("woff2"),
+  url("../fonts/proximanova-bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "proxima-regular";
+  font-style: normal;
+  font-display: optional;
+  src: url("../fonts/proximanova-regular.woff2") format("woff2"),
+  url("../fonts/proximanova-regular.woff") format("woff");
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+img {
+  // max-width: 100%;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
 
 @import "variables/variables.scss";
+
+@import "banners/banners.scss";
+
+@import "banner/banner.scss";
