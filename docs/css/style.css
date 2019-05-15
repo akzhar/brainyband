@@ -1,0 +1,121 @@
+@font-face {
+  font-weight: 400;
+  font-family: "proxima-bold";
+  font-style: normal;
+  font-display: optional;
+  src: url("../fonts/proximanova-bold.woff2") format("woff2"), url("../fonts/proximanova-bold.woff") format("woff"); }
+
+@font-face {
+  font-weight: 400;
+  font-family: "proxima-regular";
+  font-style: normal;
+  font-display: optional;
+  src: url("../fonts/proximanova-regular.woff2") format("woff2"), url("../fonts/proximanova-regular.woff") format("woff"); }
+
+html, body {
+  height: 100%;
+  margin: 0; }
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+
+.banners {
+  min-width: 320px;
+  width: 90%;
+  max-width: 1170px;
+  font-family: proxima-regular, Arial, sans-serif;
+  color: #000000;
+  outline: 1px solid pink; }
+
+.banners__head {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+  outline: 1px solid green; }
+
+.banners__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  outline: 1px solid blue; }
+
+.banners__banner {
+  width: 535px;
+  margin-bottom: 15px;
+  background: #ffe12f;
+  outline: 1px solid black; }
+
+.banner {
+  display: flex;
+  padding: 15px; }
+
+.banner__img {
+  margin-right: 20px;
+  outline: 1px solid black; }
+
+.banner__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 15px 15px 15px;
+  outline: 1px solid black; }
+
+.banner__header {
+  width: 100%;
+  margin: 0;
+  font-family: proxima-bold, Arial, sans-serif;
+  font-size: 31px;
+  font-weight: 600;
+  outline: 1px solid green; }
+
+.banner__phrase {
+  width: 100%;
+  margin: 0;
+  font-size: 16px;
+  outline: 1px solid green; }
+
+.banner__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  outline: 1px solid green; }
+
+.banner__time {
+  width: 80px; }
+
+.banner__time output {
+  display: block;
+  width: 100%;
+  font-size: 55px;
+  text-align: center;
+  border-radius: 10%;
+  background: #ffffff; }
+
+.banner__time p {
+  margin: 0;
+  text-align: center; }
+
+.banner__price {
+  font-family: proxima-bold, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #ff0072;
+  outline: 1px solid green; }
+
+.banner__btn {
+  padding: 15px;
+  background: #ff0072;
+  font-family: proxima-bold, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .banner__btn:hover {
+    opacity: 0.8; }
+  .banner__btn:active {
+    opacity: 0.6; }
