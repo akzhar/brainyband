@@ -1,0 +1,43 @@
+.banner__timer {
+  width: 100%;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer__wrapper {
+  width: 80px;
+}
+
+.timer__time {
+  display: flex;
+}
+
+.timer__time output {
+  position: relative;
+
+  width: 50%;
+
+  font-family: umnik-bold, Arial, sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+  text-align: center;
+
+  border-radius: 0 10% 10% 0;
+  background: #ffffff;
+}
+
+.timer__time output:nth-child(1) {
+  border-radius: 10% 0 0 10%;
+  border-right: 2px dashed $yellow;
+}
+
+.timer__title {
+  display: block;
+
+  margin: 0;
+
+  text-align: center;
+}

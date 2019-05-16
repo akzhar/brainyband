@@ -1,36 +1,35 @@
 .banners {
-  min-width: 320px;
-  width: 90%;
-  max-width: 1170px;
-
-  font-family: proxima-regular, Arial, sans-serif;
-  color: #000000;
-
-  outline: 1px solid pink;
-}
-
-.banners__head {
-  margin: 0;
-  margin-bottom: 15px;
-
-  font-size: 40px;
-
-  outline: 1px solid green;
-}
-
-.banners__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 
-  outline: 1px solid blue;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  background: lightgrey; //temp
+}
+
+.banners__header {
+  margin: 0 0 15px 0;
+
+  font-size: 40px;
+  font-weight: 400;
 }
 
 .banners__banner {
-  width: 535px;
+  margin-bottom: 20px;
+}
 
-  margin-bottom: 15px;
+@media(min-width: $width-2) {
+  .banners {
+    justify-content: space-between;
+  }
 
-  background: $yellow;
-  outline: 1px solid black;
+  .banners__banner:nth-of-type(1n) {
+    margin-right: auto;
+  }
+
+  .banners__banner:nth-of-type(2n) {
+    margin-right: 0;
+  }
 }
