@@ -1,5 +1,5 @@
 @font-face {
-  font-weight: 400;
+  font-weight: 600;
   font-family: "proxima-bold";
   font-style: normal;
   font-display: optional;
@@ -16,21 +16,27 @@
   url("../fonts/proximanova-regular.woff") format("woff");
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
+@font-face {
+  font-weight: 600;
+  font-family: "umnik-bold";
+  font-style: normal;
+  font-display: optional;
+  src: url("../fonts/umnik-bold.woff2") format("woff2"),
+  url("../fonts/umnik-bold.woff") format("woff");
 }
 
 img {
-  // max-width: 100%;
+  display: block;
 }
 
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+main {
+  width: 90%;
+  margin: 0 auto;
 
-  height: 100%;
+  font-family: proxima-regular, Arial, sans-serif;
+  color: #000000;
+
+  background: darkgrey; //temp
 }
 
 @import "variables/variables.scss";
@@ -38,3 +44,5 @@ img {
 @import "banners/banners.scss";
 
 @import "banner/banner.scss";
+
+@import "timer/timer.scss";

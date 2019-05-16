@@ -1,104 +1,130 @@
 .banner {
-  display: flex;
 
-  padding: 15px;
 }
 
-.banner__img {
-  margin-right: 20px;
+.banner--cube3d {
+  display: flex;
 
-  outline: 1px solid black;
+  width: 534px;
+  padding: 15px;
+  padding-bottom: 10px;
+
+  background: $yellow;
+}
+
+.banner--gifts {
+  position: relative;
+
+  width: 564px;
+
+  background: $violet;
+}
+
+.banner--cube3d .banner__img {
+  position: relative;
+
+  margin-right: 44px;
+}
+
+.banner__gift {
+  position: absolute;
+  top: -10px;
+  right: -40px;
 }
 
 .banner__info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
 
-  padding: 0 15px 15px 15px;
+  position: relative;
 
-  outline: 1px solid black;
+  width: 290px;
+
+  font-size: 16px;
 }
 
 .banner__header {
   width: 100%;
-
   margin: 0;
-  // margin-bottom: 10px;
 
   font-family: proxima-bold, Arial, sans-serif;
   font-size: 31px;
-  font-weight: 600;
-
-  outline: 1px solid green;
+  line-height: 38px;
 }
 
 .banner__phrase {
   width: 100%;
-
   margin: 0;
-
-  font-size: 16px;
-
-  outline: 1px solid green;
-}
-
-.banner__wrapper {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-
-  outline: 1px solid green;
-}
-
-.banner__time {
-  width: 80px;
-}
-
-.banner__time output {
-  display: block;
-  width: 100%;
-
-  font-size: 55px;
-  text-align: center;
-  border-radius: 10%;
-  background: #ffffff;
-}
-
-.banner__time p {
-  margin: 0;
-
-  text-align: center;
 }
 
 .banner__price {
-  font-family: proxima-bold, Arial, sans-serif;
-  font-size: 36px;
-  font-weight: 600;
-  color: $pink;
+  display: flex;
+  flex-direction: column;
 
-  outline: 1px solid green;
+  font-family: proxima-bold, Arial, sans-serif;
+}
+
+.banner__price--new {
+  font-size: 36px;
+  line-height: 36px;
+  color: $pink;
+}
+
+.banner__price--old {
+  align-self: flex-start;
+
+  position: relative;
+
+  margin: 0;
+
+  color: #000000;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(4deg);
+
+    width: 65px;
+    height: 2px;
+
+    background: $pink;
+  }
 }
 
 .banner__btn {
-  padding: 15px;
+  padding: 16px;
 
   background: $pink;
 
   font-family: proxima-bold, Arial, sans-serif;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 12px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
 
   &:hover {
-    opacity: 0.8;
+    color: $yellow;
   }
 
   &:active {
-    opacity: 0.6;
+    background: $violet;
   }
+}
+
+.banner__btn {
+  position: absolute;
+}
+
+.banner--cube3d .banner__btn {
+  right: 0;
+  bottom: 12px;
+}
+
+.banner--gifts .banner__btn {
+  right: 34px;
+  bottom: 22px;
 }

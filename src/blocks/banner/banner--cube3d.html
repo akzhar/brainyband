@@ -1,36 +1,30 @@
 <article class="banners__banner banner banner--cube3d">
 
-  <a class="banner__img" href="#" title="Кликни!">
+  <a class="banner__img" href="#" title="Кубометрия 3D">
     <picture>
       <source type="image/webp" srcset="img/banner--cube3d.webp">
-        <img src=img/banner--cube3d.png" alt="">
-      </picture>
-    </a>
+      <img src=img/banner--cube3d.png" alt="Cube 3D">
+    </picture>
+    <picture>
+      <source type="image/webp" srcset="img/cube3d__gift.webp">
+      <img class="banner__gift" src=img/cube3d__gift.png" alt="+ gift">
+    </picture>
+  </a>
 
-    <div class="banner__info">
+  <div class="banner__info">
 
-      <h2 class="banner__header">Предзаказ тетради "Кубометрия 3D"</h2>
-      <p class="banner__phrase">Акция заканчивается 14 апреля. Через:</p>
+    <h2 class="banner__header">Предзаказ тетради «Кубометрия 3D»</h2>
+    <p class="banner__phrase">Акция заканчивается 14 апреля. Через:</p>
 
-      <div class="banner__wrapper">
+    <include src="src/blocks/timer/timer.html"></include>
 
-        <div class="banner__time hours">
-          <output>12</output><p>часов</p>
-        </div>
-
-        <div class="banner__time minutes">
-          <output>12</output><p>минут</p>
-        </div>
-
-        <div class="banner__time seconds">
-          <output>12</output><p>секунд</p>
-        </div>
-
-      </div>
-
-      <span class="banner__price">9 999 ₽</span>
-      <a class="banner__btn" href="#" title="Кликни!">Подробнее</a>
-
+    <div class="banner__price">
+      <b class="banner__price--new">9 999 ₽</b>
+      <span class="banner__price--old">9 999 ₽</span>
     </div>
 
-  </article>
+    <a class="banner__btn" href="#" title="Подробности">Подробнее</a>
+
+  </div>
+
+</article>
