@@ -1,14 +1,17 @@
-.banner__timer {
-  width: 100%;
-}
-
 .timer {
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: 10px;
 }
 
 .timer__wrapper {
   width: 80px;
+  margin-right: 10px;
+}
+
+.timer__wrapper:nth-child(3) {
+  margin-right: 0;
 }
 
 .timer__time {

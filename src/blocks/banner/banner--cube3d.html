@@ -1,14 +1,16 @@
 <article class="banners__banner banner banner--cube3d">
 
-  <a class="banner__img" href="#" title="Кубометрия 3D">
-    <picture>
+  <a class="banner__link" href="#" title="Кубометрия 3D">
+
+    <picture class="banner__img">
       <source type="image/webp" srcset="img/banner--cube3d.webp">
       <img src=img/banner--cube3d.png" alt="Cube 3D">
     </picture>
-    <picture>
+    <picture class="banner__extragift">
       <source type="image/webp" srcset="img/cube3d__gift.webp">
-      <img class="banner__gift" src=img/cube3d__gift.png" alt="+ gift">
+      <img src=img/cube3d__gift.png" alt="+ gift">
     </picture>
+
   </a>
 
   <div class="banner__info">
@@ -18,12 +20,7 @@
 
     <include src="src/blocks/timer/timer.html"></include>
 
-    <div class="banner__price">
-      <b class="banner__price--new">9 999 ₽</b>
-      <span class="banner__price--old">9 999 ₽</span>
-    </div>
-
-    <a class="banner__btn" href="#" title="Подробности">Подробнее</a>
+    <include src="src/blocks/price/price.html"></include>
 
   </div>
 
