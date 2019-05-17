@@ -1,0 +1,43 @@
+.price {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: proxima-bold, Arial, sans-serif;
+}
+
+.price__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.price__new {
+  font-size: 36px;
+  line-height: 36px;
+  color: $pink;
+}
+
+.price__old {
+  position: relative;
+
+  margin: 0;
+
+  color: #000000;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(4deg);
+
+    width: 65px;
+    height: 2px;
+
+    background: $pink;
+  }
+}
+
+.price__btn {
+  align-self: flex-start;
+}
